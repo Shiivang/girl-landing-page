@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    font-family: montserrat;
+    overflow: hidden;
+}
+.heading {
+    width: 100%;
+    font-size: 20vmax;
+}
+
+nav {
+    /* background-color: red; */
+    position: relative;
+    padding: 1% 1%;
+    border: 2px solid black;
+}
+
+.nav-left > span {
+    margin-right: 2%;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(117, 115, 115);
+    transition: 0.25s linear;
+}
+
+.nav-left > span:hover {
+    cursor: pointer;
+    color: black;
+    text-shadow: 1px 1px 0 rgb(155, 153, 153);
+}
+
+.nav-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 14%;
+}
+
+.nav-right-first-btn {
+    height: 100%;
+    padding: 0 10%;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+    transition: 0.25s;
+}
+
+.nav-right > .nav-right-first-btn:hover {
+    color: white;
+    background-color: black;
+}
+
+.nav-right-second-btn {
+    transform: scaleX(1.1);
+    height: 100%;
+    padding: 0 10%;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+    transition: 0.25s;
+}
+
+.nav-right-second-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.left-content {
+    position: relative;
+    padding: 5%;
+    width: 50%;
+    height: 45.5%;
+    background-color: rgb(236, 107, 186);
+}
+
+.left-content > h1 {
+    position: absolute;
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 900;
+    top: 50%;
+    animation: slide 1s linear 0.5s infinite both;
+    opacity: 0;
+}
+
+@keyframes slide {
+    from {
+    }
+    to {
+        top: 20%;
+        opacity: 1;
+    }
+}
+
+.left-content > p {
+    font-weight: 600;
+    position: absolute;
+    top: 60%;
+    animation: display 1s linear 1.5s 1 both;
+    opacity: 0;
+}
+
+@keyframes display {
+    from {
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.right-content {
+    position: absolute;
+    left: 50%;
+    top: 54.6%;
+    width: 50%;
+    height: 45.5%;
+    background-color: rgb(237, 203, 110);
+    background-image: url(girl-5775275_960_720-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.right-content > button {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    padding: 1% 3%;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    background-color: rgb(236, 107, 186);
+    transition: 0.25s;
+}
+
+.right-content > button:hover {
+    box-shadow: 3px 3px 0 black;
+}
